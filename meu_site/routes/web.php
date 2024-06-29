@@ -21,13 +21,12 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjetosController;
 use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\VoluntariosController;
-use App\Http\Controllers\DoacoesController;
 use App\Http\Controllers\ContatosController;
-
+use App\Http\Controllers\ParceriasController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/projetos', [ProjetosController::class, 'index'])->name('projetos');
 Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias');
 Route::get('/voluntarios', [VoluntariosController::class, 'index'])->name('voluntarios');
-Route::get('/doacoes', [DoacoesController::class, 'index'])->name('doacoes');
+Route::get('/parcerias', [ParceriasController::class, 'index'])->name('parcerias');
 Route::get('/contatos', [ContatosController::class, 'index'])->name('contatos');

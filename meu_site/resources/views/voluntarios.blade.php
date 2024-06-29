@@ -16,23 +16,14 @@
     </div>
     <nav>
         <ul>
-            <li class="<?php echo isActivePage('home'); ?>"><a href="{{ route('home') }}">Home</a></li>
+            <li class="<?php echo isActivePage('home'); ?>"><a href="{{ route('home') }}">O Lar</a></li>
             <li class="<?php echo isActivePage('projetos'); ?>"><a href="{{ route('projetos') }}">Projetos</a></li>
             <li class="<?php echo isActivePage('noticias'); ?>"><a href="{{ route('noticias') }}">Notícias</a></li>
             <li class="<?php echo isActivePage('voluntarios'); ?>"><a href="{{ route('voluntarios') }}">Seja um Voluntário</a></li>
-            <li class="<?php echo isActivePage('doacoes'); ?>"><a href="{{ route('doacoes') }}">Doações</a></li>
+            <li class="<?php echo isActivePage('parcerias'); ?>"><a href="{{ route('parcerias') }}">Parcerias</a></li>
             <li class="<?php echo isActivePage('contatos'); ?>"><a href="{{ route('contatos') }}">Contatos</a></li>
         </ul>
     </nav>
-
-    <!-- <div class="form-intro">
-        <p>Quer ser voluntário no Lar da Menina?</p>
-        <p>É fácil! Basta preencher o formulário abaixo e se cadastrar.</p>
-        <p>Nossa equipe entrará em contato em breve.</p>
-        <p>Todos são bem-vindos a participar!</p>
-    </div> -->
-
-    <h2 class="form-title">Formulário de Cadastro de Voluntário</h2>
 
     <div class="volunteer-form">
         <form id="volunteerForm" action="/processa_formulario.php" method="post">
@@ -51,13 +42,12 @@
             <label for="email">E-mail:</label><br>
             <input type="email" id="email" name="email" required><br><br>
 
-            <label for="mensagem">Mensagem:</label><br>
+            <label for="mensagem">Como você pode nos ajudar?</label><br>
             <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
 
             <input type="submit" value="Enviar">
         </form>
     </div>
-
 
     <footer>
         © 2023 Lar das Meninas

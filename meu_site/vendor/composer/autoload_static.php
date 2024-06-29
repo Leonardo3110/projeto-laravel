@@ -540,7 +540,7 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\ContatosController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContatosController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\DoacoesController' => __DIR__ . '/../..' . '/app/Http/Controllers/DoacoesController.php',
+        'App\\Http\\Controllers\\ParceriasController' => __DIR__ . '/../..' . '/app/Http/Controllers/ParceriasController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\NoticiasController' => __DIR__ . '/../..' . '/app/Http/Controllers/NoticiasController.php',
         'App\\Http\\Controllers\\ProjetosController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjetosController.php',
