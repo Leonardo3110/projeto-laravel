@@ -82,8 +82,8 @@
                 images[currentImageIndex].classList.remove('hidden-image');
             }
             images[currentImageIndex].classList.remove('hidden-image');
-            setInterval(changeImage, 5000);
-        });
+            setInterval(changeImage, 3000);
+        })
     </script>
 
 </body>

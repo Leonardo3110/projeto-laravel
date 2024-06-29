@@ -308,60 +308,96 @@ nav ul li a:hover {
 
 /* STYLE's PARCERIAS */
 
+.main-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.partner-box {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.partner-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.register-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.register-section h2 {
+    margin-bottom: 10px;
+}
+
+.register-section p {
+    margin-bottom: 20px;
+}
 
 .partner-form {
     max-width: 400px;
     margin: 0 auto;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
 }
 
-.partner-form h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+.partner-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .partner-form input[type="text"],
-.partner-form input[type="email"] {
+.partner-form input[type="email"],
+.partner-form input[type="tel"],
+.partner-form textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.partner-form textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .partner-form input[type="submit"] {
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 3px;
 }
+
 
 .partner-form input[type="submit"]:hover {
     background-color: #0056b3;
-}
-
-.donation-qr-code {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.donation-qr-code h2,
-.donation-qr-code p {
-    margin-bottom: 10px;
-}
-
-.donation-qr-code img {
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
 }
 
 /* ----------------------------------------------------------- */

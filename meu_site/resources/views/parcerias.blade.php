@@ -23,42 +23,54 @@
         </ul>
     </nav>
 
-    <section class="partner-registration">
-        <h2>Deseja ser nosso parceiro?</h2>
-        <p>Faça seu cadastro abaixo:</p>
+    <div class="main-section">
+        <h2>Principais Parcerias</h2>
+        <div class="partners-container">
+            <div class="partner-box">
+                <h3>Parceiro 1</h3>
+            </div>
+            <div class="partner-box">
+                <h3>Parceiro 2</h3>
+            </div>
+            <div class="partner-box">
+                <h3>Parceiro 3</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="register-section">
+        <h2>Ainda não é nosso parceiro?</h2>
+        <p>Realize seu cadastro e faça uma doação para apoiar nossa causa.</p>
         <form action="#" method="POST" class="partner-form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required><br><br>
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required><br><br>
 
-            <button type="submit">Enviar</button>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <input type="submit" value="Enviar">
         </form>
-    </section>
-
-    <div class="donation-qr-code">
-        <h2>Realize sua doação via PIX</h2>
-        <p>Aponte a câmera do seu aplicativo de banco ou utilize o QR Code abaixo para realizar a doação.</p>
-        <img src="/img/frame_qrcode.png" alt="QR Code de doação via PIX">
     </div>
 
     <footer>
         © 2023 Lar das Meninas
     </footer>
+
+    <?php
+    function isActivePage($routeName)
+    {
+        $currentRoute = $_SERVER['REQUEST_URI'];
+
+        if (strpos($currentRoute, $routeName) !== false) {
+            return 'active';
+        } else {
+            return '';
+        }
+    }
+    ?>
 </body>
 
 </html>
-
-<?php
-function isActivePage($routeName)
-{
-    $currentRoute = $_SERVER['REQUEST_URI'];
-
-    if (strpos($currentRoute, $routeName) !== false) {
-        return 'active';
-    } else {
-        return '';
-    }
-}
-?>

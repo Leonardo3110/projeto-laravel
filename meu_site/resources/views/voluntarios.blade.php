@@ -26,7 +26,7 @@
     </nav>
 
     <div class="volunteer-form">
-        <form id="volunteerForm" action="/processa_formulario.php" method="post">
+        <form id="volunteerForm" method="post">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br><br>
 
