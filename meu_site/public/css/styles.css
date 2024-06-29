@@ -18,9 +18,7 @@ body {
 }
 
 .logo-container {
-    /* background-color: #007bff; */
     text-align: center;
-    padding: 10px;
 }
 
 .logo-img {
@@ -76,21 +74,66 @@ nav ul li a:hover {
 .image-section {
     text-align: center;
     margin-top: 30px;
-    padding: 0 20px;
 }
 
-.image-section .main-image {
-    max-width: 100%;
+.image-section img {
+    max-width: 85%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.image-section .main-image {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-image {
+    display: none;
+}
+
 .intro-text {
-    font-size: 1.2em;
+    font-size: 1.3em; 
+    font-weight: bold; 
+    color: #444; 
+    margin-top: 20px; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+
+.intro-section {
+    text-align: justify;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section p {
+    font-size: 16px;
+    line-height: 1.6;
     color: #666;
+    margin-bottom: 10px;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro-section .historia {
+    margin-bottom: 20px;
+}
+
+.intro-section .quem-somos {
     margin-top: 20px;
 }
+
 
 /* ----------------------------------------------------------- */
 
@@ -327,7 +370,8 @@ nav ul li a:hover {
 .contact-info img {
     max-width: 300px;
     border-radius: 8px;
-    margin-right: 20px; /* Adiciona um espaço à direita da imagem */
+    margin-right: 20px;
+    /* Adiciona um espaço à direita da imagem */
 }
 
 .contact-details {
@@ -335,31 +379,36 @@ nav ul li a:hover {
 }
 
 .contact-details h2 {
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    font-size: 24px; /* Tamanho do título */
-    color: #333; /* Cor do texto */
+    margin-bottom: 10px;
+    /* Espaço abaixo do título */
+    font-size: 24px;
+    /* Tamanho do título */
+    color: #333;
+    /* Cor do texto */
 }
 
 .contact-details p {
-    margin-bottom: 8px; /* Espaçamento entre os parágrafos */
-    font-size: 16px; /* Tamanho do texto */
-    color: #666; /* Cor do texto */
+    margin-bottom: 8px;
+    /* Espaçamento entre os parágrafos */
+    font-size: 16px;
+    /* Tamanho do texto */
+    color: #666;
+    /* Cor do texto */
 }
 
 .google-maps {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .google-maps iframe {
     width: 100%;
-    max-width: 600px;
+    max-width: 50%;
     height: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
-
 
 /* ----------------------------------------------------------- */
 
