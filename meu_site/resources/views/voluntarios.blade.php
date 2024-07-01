@@ -1,20 +1,3 @@
-@if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
-
-@if($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -77,6 +60,26 @@
         inputmask({
             mask: '(99) 9999-9999[9]'
         }).mask(telefoneInput);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var successMessage = {!! json_encode(session('success')) !!};
+            var errorMessage = {!! json_encode(session('error')) !!};
+            var validationErrors = {!! json_encode($errors->all()) !!};
+
+            if (successMessage) {
+                alert(successMessage);
+            }
+
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+
+            if (validationErrors.length > 0) {
+                validationErrors.forEach(function (error) {
+                    alert(error);
+                });
+            }
+        });
     </script>
 
 </body>
