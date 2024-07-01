@@ -23,6 +23,7 @@ use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\VoluntariosController;
 use App\Http\Controllers\ContatosController;
 use App\Http\Controllers\ParceriasController;
+use App\Http\Controllers\VoluntarioController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/projetos', [ProjetosController::class, 'index'])->name('projetos');
@@ -30,3 +31,4 @@ Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias');
 Route::get('/voluntarios', [VoluntariosController::class, 'index'])->name('voluntarios');
 Route::get('/parcerias', [ParceriasController::class, 'index'])->name('parcerias');
 Route::get('/contatos', [ContatosController::class, 'index'])->name('contatos');
+Route::post('/voluntarios', [VoluntarioController::class, 'store'])->name('voluntarios.store');
