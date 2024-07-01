@@ -1,3 +1,20 @@
+@if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+@if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -26,7 +43,8 @@
     </nav>
 
     <div class="volunteer-form">
-        <form id="volunteerForm" method="post">
+        <form id="volunteerForm" method="post" action="{{ route('voluntarios.store') }}">
+            @csrf
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br><br>
 
@@ -64,7 +82,6 @@
 </body>
 
 </html>
-
 
 <?php
 function isActivePage($routeName)
