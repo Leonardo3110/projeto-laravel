@@ -14,12 +14,12 @@
     </div>
     <nav>
         <ul>
-            <li class="<?php echo isActivePage('home'); ?>"><a href="{{ route('home') }}">O Lar</a></li>
-            <li class="<?php echo isActivePage('projetos'); ?>"><a href="{{ route('projetos') }}">Projetos</a></li>
-            <li class="<?php echo isActivePage('noticias'); ?>"><a href="{{ route('noticias') }}">Notícias</a></li>
-            <li class="<?php echo isActivePage('voluntarios'); ?>"><a href="{{ route('voluntarios') }}">Seja um Voluntário</a></li>
-            <li class="<?php echo isActivePage('parcerias'); ?>"><a href="{{ route('parcerias') }}">Parcerias</a></li>
-            <li class="<?php echo isActivePage('contatos'); ?>"><a href="{{ route('contatos') }}">Contatos</a></li>
+            <li class="{{ isActivePage('home') }}"><a href="{{ route('home') }}">O Lar</a></li>
+            <li class="{{ isActivePage('projetos') }}"><a href="{{ route('projetos') }}">Projetos</a></li>
+            <li class="{{ isActivePage('noticias') }}"><a href="{{ route('noticias') }}">Notícias</a></li>
+            <li class="{{ isActivePage('voluntarios') }}"><a href="{{ route('voluntarios') }}">Seja um Voluntário</a></li>
+            <li class="{{ isActivePage('parcerias') }}"><a href="{{ route('parcerias') }}">Parcerias</a></li>
+            <li class="{{ isActivePage('contatos') }}"><a href="{{ route('contatos') }}">Contatos</a></li>
         </ul>
     </nav>
 
@@ -41,7 +41,8 @@
     <div class="register-section">
         <h2>Ainda não é nosso parceiro?</h2>
         <p>Realize seu cadastro e faça uma doação para apoiar nossa causa.</p>
-        <form action="#" method="POST" class="partner-form">
+        <form action="{{ route('salvar-parceria') }}" method="POST" class="partner-form">
+            @csrf
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
 

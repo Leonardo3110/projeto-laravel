@@ -24,6 +24,7 @@ use App\Http\Controllers\VoluntariosController;
 use App\Http\Controllers\ContatosController;
 use App\Http\Controllers\ParceriasController;
 use App\Http\Controllers\VoluntarioController;
+use App\Http\Controllers\ParceriaController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/projetos', [ProjetosController::class, 'index'])->name('projetos');
@@ -32,3 +33,4 @@ Route::get('/voluntarios', [VoluntariosController::class, 'index'])->name('volun
 Route::get('/parcerias', [ParceriasController::class, 'index'])->name('parcerias');
 Route::get('/contatos', [ContatosController::class, 'index'])->name('contatos');
 Route::post('/voluntarios', [VoluntarioController::class, 'store'])->name('voluntarios.store');
+Route::post('/salvar-parceria', [ParceriaController::class, 'salvar'])->name('salvar-parceria');
