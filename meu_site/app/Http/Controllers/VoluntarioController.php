@@ -16,7 +16,7 @@ class VoluntarioController extends Controller
             'telefone' => 'nullable|string|max:255',
             'endereco' => 'nullable|string|max:255',
             'cidade' => 'nullable|string|max:255',
-            'email' => 'required|email|max:255|unique:voluntarios,email',
+            'email' => 'required|email|max:255|unique:voluntario,email',
             'mensagem' => 'nullable|string',
         ]);
 
